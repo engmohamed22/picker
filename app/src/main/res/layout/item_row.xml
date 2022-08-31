@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/flag_turkey" />
+
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toStartOf="@+id/tv_nameCode"
+        android:layout_toEndOf="@+id/iv_flag"
+        android:maxLines="1"
+        android:text="Turkey"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_nameCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="TR"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tv_phoneCode"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_phoneCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end|center"
+        android:text="+90"
+
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+</RelativeLayout>
